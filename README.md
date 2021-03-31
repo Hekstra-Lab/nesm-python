@@ -22,25 +22,31 @@ Ian Hunt-Isaak (ianhuntisaak@g.harvard.edu)
  - Indexing
  - Basic Broadcasting (possible example something like background subtraction? also `keep-dims`)
  - Numpy for image data
+
+- Matplotlib
+ - plot
+ - imshow
 - Xarray (time permitting)
 - Modular code and pip installation (time permitting)
+- mpl-interactions feat. hyperslicer
 
 
-#### Afternoon (~2 hours)
+#### Afternoon
+ 
 ***Part 2*** Image analysis and I/O
 - Intro to the nightmare of I/O
+- Structure: two motivating examples for which we illustrate the entire pipeline of analysis
+- Napari 
+- Many examples (see email suggestions)
 - Skimage
+- Scipy ndimage
 - Frame-wise operations with `np.vectorize`
-- napari 
+- Resource list
 
-***Part 3*** Mini discussion of hardware control?
-- In the spirit of less is more maybe we should spend the whole morning
-on python essentials and move part 2 to the afternoon? Feels like you can never have enough? But also who
-knows what the experience level of this audience will be compared to undergrads...
+***Part 3*** Mini discussion of hardware control
 
 ***Part 4*** Advanced topics to explore
 
 - Dask and big data
 - Sklearn (NMF example and/or PCA on SRS beads data)
 - Deep learning (Basically show off YeaZ unet?)
-- Other GPU stuff
