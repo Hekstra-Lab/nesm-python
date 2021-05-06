@@ -5,48 +5,20 @@ Prepared and presented by John Russell (johnrussell@g.harvard.edu) and
 Ian Hunt-Isaak (ianhuntisaak@g.harvard.edu)
 
 ### Proposed Schedule
+See `outline.md` for a more detailed outline. Everything is subject to change and time constraints.
 
-#### Morning 
+- **Part 1** Python basics
+- **Part 2** Image analysis and I/O
+- **Part 3** Advanced topics
 
-***Part 1*** Python essentials
-- Conda, virtual environments, installation
-- Jupyter lab
-- Pure python
- - For loops
- - Control flow
- - Lists and dictionaries 
- - Functions
-
-- Numpy
- - Vectorized operations
- - Indexing
- - Basic Broadcasting (possible example something like background subtraction? also `keep-dims`)
- - Numpy for image data
-
-- Matplotlib
- - plot
- - imshow
-- Xarray (time permitting)
-- Modular code and pip installation (time permitting)
-- mpl-interactions feat. hyperslicer
+### Getting started
 
 
-#### Afternoon
- 
-***Part 2*** Image analysis and I/O
-- Intro to the nightmare of I/O
-- Structure: two motivating examples for which we illustrate the entire pipeline of analysis
-- Napari 
-- Many examples (see email suggestions)
-- Skimage
-- Scipy ndimage
-- Frame-wise operations with `np.vectorize`
-- Resource list
+Please install `conda`, a package manager, with python 3.8 or 3.9. Follow one of the links below and then follow instructions for your operating system. There are two options
+1. [Miniconda](https://docs.conda.io/en/latest/miniconda.html) - an absolutely minimal version
+1. [Conda](https://conda.io/projects/conda/en/latest/user-guide/install/index.html#regular-installation) - this version includes conda as well as many other common python packages.
 
-***Part 3*** Mini discussion of hardware control
 
-***Part 4*** Advanced topics to explore
-
-- Dask and big data
-- Sklearn (NMF example and/or PCA on SRS beads data)
-- Deep learning (Basically show off YeaZ unet?)
+#### Don't want a local python installation?
+Click the button to launch a binder instance where you can run all the code online.
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Hekstra-Lab/nesm-python/main)
