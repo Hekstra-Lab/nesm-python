@@ -21,4 +21,4 @@ Please install `conda`, a package manager, with python 3.8 or 3.9. Follow one of
 
 #### Don't want a local python installation?
 Click the button to launch a binder instance where you can run all the code online.
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Hekstra-Lab/nesm-python/main)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Hekstra-Lab/nesm-python/spring-2021?urlpath=lab)
