@@ -1,0 +1,20 @@
+name: nesm
+channels:
+   - conda-forge
+depenencies:
+  - python
+  - numpy
+  - scipy
+  - matplotlib
+  - scikit-image
+  - sckikit-learn
+  - dask
+  - xarray
+  - jupyterlab
+  - ipympl
+  - hyperspy
+  - pip
+  - pip:
+    - mpl_interactions
+    - tifffile
+    
