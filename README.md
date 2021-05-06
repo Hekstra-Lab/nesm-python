@@ -5,7 +5,7 @@ Prepared and presented by John Russell (johnrussell@g.harvard.edu) and
 Ian Hunt-Isaak (ianhuntisaak@g.harvard.edu)
 
 ### Proposed Schedule
-See `outline.md` for a more detailed outline. Everything is subject to change and time constraints.
+See [`outline.md`](outline.md) for a more detailed outline. Everything is subject to change and time constraints.
 
 - **Part 1** Python basics
 - **Part 2** Image analysis and I/O
