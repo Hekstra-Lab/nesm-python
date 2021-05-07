@@ -1,0 +1,26 @@
+name: nesm
+
+channels:
+  - conda-forge
+
+dependencies:
+  - python >=3.8,<3.9.0a0
+  - jupyterlab >=3,<4.0.0a0
+  - pip
+  - wheel
+  - ipympl
+  - ipywidgets
+  - matplotlib
+  - xarray
+  - dask
+  - netCDF4
+  - bottleneck
+  - scipy
+  - scikit-image
+  - scikit-learn
+  - pip:
+    - jupyterlab_code_formatter
+    - mpl_interactions
+    - hyperspy
+    - tifffile
+
