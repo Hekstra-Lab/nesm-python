@@ -7,6 +7,7 @@ import scipy.ndimage as ndi
 import scipy
 from scipy.optimize import linear_sum_assignment
 from skimage.segmentation import watershed
+from skimage.feature import peak_local_max
 
 try:
     import napari
@@ -50,6 +51,27 @@ def interactive_threshold(image, bins="auto", figsize=(12, 5)):
     _ = iplt.axvline(ctrls["vmax"], ax=axs[1], c="k")
     return ctrls, axs
 
+
+def individualize_single_frame(mask, min_distance=10):
+    """
+    Perform a watershed segmentation on a single frame.
+
+    Parameters
+    ----------
+    mask : (M, N) arraylike of bool
+
+    Returns
+    -------
+    labels : (M, N) array
+    peaks : (M, N) array
+    """
+    distance = ndi.distance_transform_edt(mask)
+    coords = peak_local_max(distance, min_distance=min_distance)
+    peaks = np.zeros(distance.shape, dtype=bool)
+    peaks[tuple(coords.T)] = True
+    markers, _ = ndi.label(peaks)
+    labels = watershed(-distance, markers, mask=mask, connectivity=2)
+    return labels, peaks
 
 ###############################
 # The rest of this file is a slightly modified version of:
@@ -560,7 +582,8 @@ def construct_cost_matrix(
             row_pad = N - M
             C = np.pad(C, ((0, row_pad), (0, 0)), constant_values=pad)
         elif M > N:
-            print("oh boi!")
+            print("More cells in the current frame than the previous frame")
+            print('for best results rerun correct_watershed and fix this')
             print(debug_info + f" - {M} {N}")
         return C, M
     return C, M
