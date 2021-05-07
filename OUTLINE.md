@@ -1,6 +1,7 @@
+# Outline
 
 
-***Part 1*** Python essentials
+## Part 1 Python essentials
 - Conda, virtual environments, installation
 - Jupyter lab
 - Pure python
@@ -23,18 +24,16 @@
 - Modular code and pip installation (time permitting)
 
  
-***Part 2*** Image analysis and I/O
-- Intro to the nightmare of I/O
-- Structure: two motivating examples for which we illustrate the entire pipeline of analysis
+## Part 2 - Brief Discussion of Hardware Control
+
+## Part 3 - Leveraging the Ecoystem for Image Analysis
+- Dicussion of Ecosystem
 - Napari 
-- Many examples (see email suggestions)
-- Skimage
-- Scipy ndimage
-- Frame-wise operations with `np.vectorize`
+- Examples from EM and light microscopy
 - Resource list
 
 
-***Part 3*** Advanced topics to explore
+## Part 4 Advanced topics to explore
 
 - Dask and big data
 - Sklearn 
