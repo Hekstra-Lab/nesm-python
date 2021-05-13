@@ -502,12 +502,12 @@ def overlap(prev, curr, shape):
     """
 
     # figure out if masks overlap and make those ones more likely
-    try:
-        from fast_overlap import overlap
+#     try:
+#         from fast_overlap import overlap
 
-        return np.asarray(overlap(prev, curr, shape))
-    except ImportError:
-        return _py_overlap(prev, curr, shape)
+#         return np.asarray(overlap(prev, curr, shape))
+#     except ImportError:
+    return _py_overlap(prev, curr, shape)
 
 
 def norm(prev, curr):
