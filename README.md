@@ -11,11 +11,12 @@ If you are reading this independently we recommend you start in the `solutions` 
 
 
 ## Proposed Schedule
-See [`outline.md`](outline.md) for a more detailed outline. Everything is subject to change and time constraints.
+See [`outline.md`](outline.md) for a more detailed outline.
 
 - **Part 1** Python basics
-- **Part 2** Image analysis and I/O
-- **Part 3** Advanced topics
+- **Part 2** Hardware Control
+- **Part 3** Image analysis and I/O
+- **Part 4** Advanced topics
 
 ## Getting started
 
